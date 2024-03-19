@@ -1,0 +1,67 @@
+
+<!-- res/layout/fragment1.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/Charcoal">
+
+    <TextView
+        android:id="@+id/Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Instagram"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/messenger"
+        android:paddingRight="10dp"
+        android:paddingTop="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/msg"/>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:src="@drawable/psg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/post"
+        android:layout_marginLeft="-10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="psg"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        app:layout_constraintTop_toTopOf="@id/post"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="-10dp"
+        />
+
+    <ImageView
+        android:id="@+id/post"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"
+        android:src="@drawable/ney"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

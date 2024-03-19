@@ -1,0 +1,125 @@
+
+<!-- res/layout/fragment1.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:src="@drawable/baseline_keyboard_arrow_left_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/stream"
+        android:layout_width="40dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="13dp"
+        android:src="@drawable/stream"
+        app:layout_constraintEnd_toStartOf="@id/search"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/dots"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/dots"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/search"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/search"
+        app:layout_constraintEnd_toStartOf="@id/dots"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/account"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="45dp"
+        android:text="Kenas Akia R"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/account"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/namaasli"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Kenasakiar86"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@id/account"
+        app:layout_constraintTop_toBottomOf="@id/nama" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="5 subscriber · 1 video"
+        app:layout_constraintStart_toEndOf="@id/account"
+        app:layout_constraintTop_toBottomOf="@id/namaasli" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKelola"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonyt"
+        android:textStyle="bold"
+        android:text="Kelola video"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/info"  />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttonyt"
+        android:text="ANALYTICS"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:id="@+id/anali"
+        app:layout_constraintStart_toEndOf="@id/btnKelola"
+        app:layout_constraintTop_toBottomOf="@id/info" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pen"
+        app:layout_constraintStart_toEndOf="@id/anali"
+        app:layout_constraintTop_toBottomOf="@id/info"
+        android:background="@drawable/circlebtn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
